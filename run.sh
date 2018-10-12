@@ -4,10 +4,10 @@ Usage: $0 <spark-master> <hbase-zk> <graphName>  <algorithm> <algorithm-args>
 algorithm:
 		PageRank
 		PersonalizedPageRank <vertexId>
-		ConnectedComponents <output>
-		StronglyConnectedComponents <output>
+		ConnectedComponents <output> //output stored to hdfs filesystem
+		StronglyConnectedComponents <output> //output stored to hdfs filesystem
 		LabelPropagation
-		ShortestPaths  <vertexId...> : vertexId... 指定单源序列，查询所有其他顶点到此顶点距离
+		ShortestPaths  <vertexId...> //vertexId... 指定单源序列，查询所有其他顶点到此顶点距离
 		TriangleCount
 		SvdPlusPlus 
 EOF
